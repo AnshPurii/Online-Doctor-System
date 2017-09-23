@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="25dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="TextView"
+        android:layout_below="@+id/textView_name"
+        android:layout_alignStart="@+id/textView_name"
+        android:layout_alignLeft="@+id/textView_name"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_about"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="onAppoint"
+        android:text="Appointment"
+        android:textColor="@android:color/background_light" />
+</RelativeLayout>
