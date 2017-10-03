@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aakash.ods">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/capture"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/capture"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ODS1" />
+        <activity android:name=".ODS2" />
+        <activity android:name=".ODS3" />
+        <activity android:name=".Cardiology" />
+        <activity android:name=".Medicine" />
+        <activity android:name=".Neurologist" />
+        <activity android:name=".Surgery" />
+        <activity android:name=".Gynaecologist"/>
+        <activity android:name=".Orthopedic"/>
+
+        <activity
+            android:name=".BookAppoint"
+            android:label="@string/title_activity_book_appoint"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
